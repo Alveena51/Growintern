@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9eeef;
+            color: #0d0d0e;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0c1214;
+            color: azure;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(190, 153, 82);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0c1214;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #181e74;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0c1214;
+            color: #f9eeef;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .socialicons {
+            margin-bottom: 10px;
+        }
+
+        .socialicons a {
+            color: #f9eeef;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .socialicons a:hover {
+            color: rgb(190, 153, 82);
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstsection {
+                margin: 30px 0;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .secondsection {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 455px) {
+            body {
+                background-color: aqua;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstsection {
+                margin: 20px 0;
+            }
+
+            .leftsection {
+                font-size: 1.2rem;
+            }
+
+            form {
+                padding: 15px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Alveena- Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="website.html">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="contact me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="firstsection">
+        <h1 class="leftsection">
+            Fill Form to Contact
+        </h1>
+    </div>
+    <div class="form-container">
+        <form>
+            <label for="academic">Name</label>
+            <input type="text" id="name">
+            <br>
+            <br>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject">
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <br>
+            <br>
+
+            <label for="message">Enter Your Message</label>
+            <input type="text" id="message" size="30">
+            <br>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="socialicons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div>
+            <p>copyright &copy; 2024; Designed by <span class="Designer">Alveena</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

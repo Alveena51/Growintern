@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9eeef;
+            color: #0f1010;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 14px; /* Adjusted text size */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0c1214;
+            color: azure;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(59, 174, 194);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.2rem; /* Adjusted text size */
+        }
+
+        .firstsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .leftsection {
+            margin: 20px 0;
+            font-size: 0.9rem; /* Adjusted text size */
+        }
+
+        .rightsection img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Ensure the image takes full width */
+            max-width: 500px; /* Constrain the maximum size */
+        }
+
+        .purple {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #181e74;
+            height: 1.2px;
+            margin: 40px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0c1214;
+            color: #f9eeef;
+        }
+
+        .socialicons {
+            margin-bottom: 10px;
+        }
+
+        .socialicons a {
+            color: #f9eeef;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .socialicons a:hover {
+            color: rgb(59, 174, 194);
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (min-width: 768px) {
+            .firstsection {
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: left;
+            }
+
+            .leftsection {
+                font-size: 1rem;
+                align-self: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstsection {
+                margin: 20px 0;
+            }
+
+            .leftsection {
+                font-size: 0.8rem;
+            }
+
+            .secondsection {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 455px) {
+            body {
+                background-color: #e9f5f8;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstsection {
+                margin: 20px 0;
+            }
+
+            .leftsection {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Alveena- Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="website.html">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="contact me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1>So! Who Am I?</h1>
+                <span class="purple">I am Alveena Aslam</span>
+                <div>
+                    A dedicated Computer Science student at The Begum Nusrat Bhutto Women University Sukkur, currently in
+                    my third year with a CGPA of 3.74. My academic journey includes achieving top grades in both
+                    intermediate and matriculation from Hira Public Higher School and College Sukkur. I have developed
+                    strong skills in web development and programming, with hands-on experience in Java, C, HTML, CSS,
+                    JavaScript, PHP, Laravel, and Yii. Notably, I have completed significant projects like a Quiz
+                    Management System and a Notice Board System.
+                    Additionally, I have an interest in web development and baking. I possess a robust set of skills
+                    suitable for remote and flexible projects, particularly in web development and programming. With
+                    proficiency in languages such as Java and C, along with extensive experience in web development
+                    frameworks like Laravel and Yii, I am well-equipped to handle a variety of tasks remotely. My
+                    familiarity with essential tools such as MS Office and GitHub further complements my ability to
+                    manage and execute projects efficiently in a virtual environment.
+                    Additionally, my academic background and involvement in significant projects like the Quiz
+                    Management System and Notice Board System demonstrate my capability to deliver high-quality work
+                    independently. My recent certification in Web Engineering underlines my commitment to staying updated
+                    with industry trends and best practices. Although I have not listed specific freelancing projects, my
+                    academic and professional experiences have provided me with the necessary skills and discipline to
+                    excel in remote project settings. I am confident that my technical abilities, coupled with my
+                    proactive approach to learning and problem-solving, make me a strong candidate for any remote or
+                    flexible role.
+                </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="aaa.png" alt="Alveena's photo">
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <div class="socialicons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div>
+            <p>copyright &copy;2024; Designed by <span class="Designer">Alveena</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

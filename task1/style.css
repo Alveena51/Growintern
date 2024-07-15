@@ -1,27 +1,27 @@
-* {
+body {
+    background: #0a192f;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f9eeef;
-    color: #0f1010;
-    font-family: Arial, sans-serif;
+    color: #ccd6f6;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0c1214;
-    color: azure;
-    padding: 10px 20px;
+    background-color: #020c1b;
+    color: #ccd6f6;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    list-style: none;
+    justify-content: center;
 }
 
 nav ul li {
@@ -29,169 +29,206 @@ nav ul li {
 }
 
 nav ul li a {
+    color: hsl(166, 100%, 70%);
     text-decoration: none;
-    color: white;
-    transition: color 0.3s, font-size 0.3s;
 }
 
 nav ul li a:hover {
-    color: rgb(59, 174, 194);
-    font-size: 1.04rem;
+    color: #e0f5ff;
 }
 
-.left {
-    font-size: 1.5rem;
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.firstsection {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 50px 20px;
 }
 
-.leftsection {
-    font-size: 2rem;
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.rightsection img {
-    max-width: 100%;
-    height: auto;
+.intro {
+    text-align: center;
 }
 
-.secondsection {
-    max-width: 80vw;
-    margin: auto;
-    height: 80vh;
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #64ffda;
 }
 
-main hr {
-    border: 0;
-    background-color: #181e74;
-    height: 1.2px;
-    margin: 80px 0;
-}
-
-sectionsecond h1 {
+.intro p {
     font-size: 1.5rem;
+    color: #ccd6f6;
 }
 
-.secondsection .box {
-    background-color: #fff;
-    width: 80vw;
-    height: 2px;
-    margin: 56px 0;
+.cv-button {
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.secondsection .vertical {
-    height: 93px;
-    width: 1px;
-    background-color: #fff;
+.cv-button:hover {
+    background-color: #e0f5ff;
 }
 
-.footer {
+#about {
+    padding: 50px;
+    background: #112240;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+#education {
+    padding: 50px;
+    background: #112240;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-box {
+    background: #0a192f;
+    color: #ccd6f6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a192f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #112240;
+    color: #ccd6f6;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #64ffda;
+    color: #0a192f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0f5ff;
+}
+
+footer {
     text-align: center;
     padding: 20px;
-    background-color: #0c1214;
-    color: #f9eeef;
+    background-color: #020c1b;
+    color: #ccd6f6;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
-.socialicons {
-    margin-bottom: 10px;
-}
-
-.socialicons a {
-    color: #f9eeef;
+.social-icons a {
+    color: #64ffda;
+    font-size: 2rem;
     margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
 }
 
-.socialicons a:hover {
-    color: rgb(59, 174, 194);
+.social-icons a:hover {
+    color: #e0f5ff;
 }
 
-.footer p {
-    margin: 0;
-}
-
-@media (min-width: 768px) {
-    .firstsection {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-    }
-
-    .leftsection {
-        font-size: 3rem;
-        margin-bottom: 0;
-        align-self: center;
-    }
-
-    .rightsection {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .education-box {
+        width: 100%;
         margin: 10px 0;
     }
 
-    .firstsection {
-        margin: 30px 0;
+    .form-container {
+        width: 90%;
     }
+}
 
-    .leftsection {
+@media (max-width: 480px) {
+    .intro h1 {
         font-size: 1.5rem;
     }
 
-    .secondsection {
-        height: auto;
-    }
-}
-
-@media (max-width: 455px) {
-    body {
-        background-color: aqua;
+    .intro p {
+        font-size: 1rem;
     }
 
-    nav {
-        flex-direction: column;
+    .cv-button {
+        padding: 10px 15px;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
+    .education-box {
+        width: 100%;
         margin: 10px 0;
     }
-
-    .firstsection {
-        margin: 20px 0;
-    }
-
-    .leftsection {
-        font-size: 1.2rem;
-    }
 }
-
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #0c0c0c;
-}
-@media only screen and (max-width:455px){
-    body{
-        background-color: aqua;
-    }}
